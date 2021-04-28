@@ -11,7 +11,7 @@ export default function App() {
       <Text style={styles.text}>My first React Native app!</Text>
       <StatusBar style="auto" />
       
-      <Text style={styles.text}>Hello world! (From React Native)</Text>
+      <Text style={styles.text2}>By: Chris Emerfoll</Text>
       </ImageBackground>
     </SafeAreaView>
   );
@@ -34,6 +34,13 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 42,
     fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#000000a0"
+  },
+  text2: {
+    color: "white",
+    fontSize: 24,
+    // fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "#000000a0"
   }
