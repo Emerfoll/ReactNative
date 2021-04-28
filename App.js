@@ -1,22 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ImageBackground } from 'react-native';
+
+const image = { uri: "https://wallpaperaccess.com/full/57166.jpg" };
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>My first React Native app!</Text>
+    <SafeAreaView style={styles.container}>
+      <ImageBackground source={image} style={styles.image}>
+      <Text style={styles.text}>My first React Native app!</Text>
       <StatusBar style="auto" />
-      <Text>Hello world! (From React Native)</Text>
-    </View>
+      
+      <Text style={styles.text}>Hello world! (From React Native)</Text>
+      </ImageBackground>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    flexDirection: 'column',
+    backgroundColor: 'snow',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+  },
+  text: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#000000a0"
+  }
 });
