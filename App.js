@@ -10,30 +10,39 @@ import {
   Alert,
   Button,
 } from "react-native";
+import {
+  useDimensions,
+  useDeviceOrientation,
+} from "@react-native-community/hooks";
 
 const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 // const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 export default function App() {
+  console.log(useDeviceOrientation());
+  const { landscape } = useDeviceOrientation();
+
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={image} style={styles.background}>
-        <View style={{
-          // backgroundColor: 'purple',
-          width: "75%",
-          alignItems: 'center',
-          marginHorizontal: 55,
-          
-        }}>
+        <View
+          style={{
+            // backgroundColor: 'purple',
+            // width: "75%",
+            flex: .3,
+            alignItems: 'center',
+            marginHorizontal: landscape ? 100 : 55,
+          }}
+        >
           <Text style={styles.text}>My first React Native app!</Text>
           <StatusBar style="auto" />
 
           {/* <Image 
-      source={{ 
-        width: 200,
-        height: 300,
-        uri: "https://i.picsum.photos/id/397/200/300.jpg?hmac=9VBInLrifj_yyc2JuJSAVIfj9yQdt5Ovm2sHmvva-48"}} 
-      /> */}
+              source={{ 
+                width: 200,
+                height: 300,
+                uri: "https://i.picsum.photos/id/397/200/300.jpg?hmac=9VBInLrifj_yyc2JuJSAVIfj9yQdt5Ovm2sHmvva-48"}} 
+              /> */}
 
           <Text
             style={styles.text2}
@@ -63,7 +72,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
+    flexDirection: "row",
     backgroundColor: "gray",
     // alignItems: 'center',
     justifyContent: "center",
