@@ -27,7 +27,7 @@ function OtherTestScreen(props) {
         source={{uri:"https://c4.wallpaperflare.com/wallpaper/111/745/193/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg",}}
       />
 
-      <Text style={styles.text}>This is my first react app!</Text>
+      <Text style={styles.text}>This is my first react native app!</Text>
 
       <View style={styles.loginButton} />
 
