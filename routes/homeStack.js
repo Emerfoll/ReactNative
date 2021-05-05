@@ -8,7 +8,7 @@ const screens = {
     Home : {
         screen : WelcomeScreen,
     },
-    Welcome: {
+    Other: {
         screen : OtherTestScreen,
     },
 };
