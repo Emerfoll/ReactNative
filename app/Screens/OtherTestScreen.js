@@ -30,6 +30,7 @@ function OtherTestScreen(props) {
 
       <Text style={styles.text}>This is my first react native app!</Text>
 
+    {/* place holders for buttons that will be added later. */}
       <View style={styles.loginButton} />
 
       <View style={styles.registerButton} />
@@ -77,9 +78,7 @@ const styles = StyleSheet.create({
   text2: {
     color: "white",
     fontSize: 24,
-    // fontWeight: "bold",
     textAlign: "center",
-
     backgroundColor: "#000000a0",
   },
 });

@@ -19,35 +19,37 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 // const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 function WelcomeScreen({ navigation }) {
+    // used to detect if the screen is in portrait or landscape mode
   const { landscape } = useDeviceOrientation();
 
-  
   const sendToOtherScreen = () => {
-      console.log("Clicking this button will route the user to 'otherTestScreen'");
-      
-      navigation.navigate('Other')
-      
-  }
+    console.log(
+      "Clicking this button will route the user to 'otherTestScreen'"
+    );
+    // navigates the the "otherTestScreen"
+    navigation.navigate("Other");
+  };
 
   return (
     <ImageBackground source={image} style={styles.background}>
       <View
+        // styling for the button position
         style={{
-          // height: 75,
           width: 75,
           left: 50,
           top: 50,
           position: "absolute",
-          // backgroundColor: "purple",
         }}
       >
         <Button
           title="Go To Other Page."
           onPress={() => sendToOtherScreen()}
-          accessibilityLabel= "Button to go to 'other page'"
+          accessibilityLabel="Button to go to 'other page'"
         />
       </View>
+
       <View
+        // place holder for a button
         style={{
           height: 75,
           width: 75,
@@ -66,8 +68,6 @@ function WelcomeScreen({ navigation }) {
       >
         <Text style={styles.text}>My first React Native app!</Text>
         {/* <StatusBar style="auto" /> */}
-
-        
 
         <Text style={styles.text2} onPress={() => console.log("name clicked")}>
           By: Chris Emerfoll
@@ -91,6 +91,7 @@ function WelcomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  // style for the container
   container: {
     flex: 1,
     flexDirection: "row",
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     justifyContent: "center",
   },
+  // styling for the button
   button: {
     flexDirection: "row",
     justifyContent: "center",
@@ -119,7 +121,6 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 24,
     textAlign: "center",
-
     backgroundColor: "#000000a0",
   },
   image: {
