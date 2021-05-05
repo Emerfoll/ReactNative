@@ -44,6 +44,7 @@ function WelcomeScreen({ navigation }) {
         <Button
           title="Go To Other Page."
           onPress={() => sendToOtherScreen()}
+          accessibilityLabel= "Button to go to other page"
         />
       </View>
       <View
