@@ -16,6 +16,7 @@ import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks";
+import Navigator from './routes/homeStack';
 
 const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 // const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
@@ -29,7 +30,10 @@ export default function App() {
       
       {/* <WelcomeScreen/> */}
 
-      <OtherTestScreen/>
+      {/* <OtherTestScreen/> */}
+
+      <Navigator/>
+
 
 
     </SafeAreaView>

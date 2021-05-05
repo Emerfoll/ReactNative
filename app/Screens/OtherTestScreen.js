@@ -32,6 +32,8 @@ function OtherTestScreen(props) {
       <View style={styles.loginButton} />
 
       <View style={styles.registerButton} />
+
+
     </ImageBackground>
   );
 }
