@@ -21,57 +21,56 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 function OtherTestScreen(props) {
   return (
     <ImageBackground source={image} style={styles.background}>
-      <View
-        style={{
-          height: 75,
-          width: 75,
-          left: 50,
-          bottom: 700,
-          position: "absolute",
-          backgroundColor: "purple",
-        }}
+        
+      <Image
+        style={styles.image}
+        source={{uri:"https://c4.wallpaperflare.com/wallpaper/111/745/193/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg",}}
       />
 
-      <View
-        style={{
-          height: 75,
-          width: 75,
-          right: 50,
-          bottom: 700,
-          position: "absolute",
-          backgroundColor: "gray",
-        }}
-      />
+      <Text style={styles.text}>This is my first react app!</Text>
+
+      <View style={styles.loginButton} />
+
+      <View style={styles.registerButton} />
     </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: "row",
-    backgroundColor: "gray",
-    // alignItems: 'center',
-    justifyContent: "center",
-  },
-  button: {
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 25,
-  },
   background: {
     flex: 1,
-    resizeMode: "cover",
-    justifyContent: "center",
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
+
+  loginButton: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "purple",
+  },
+
+  registerButton: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "gray",
+  },
+
   text: {
     color: "white",
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom: 11,
-    // backgroundColor: "#000000a0"
+    position: "absolute",
+    top: 85,
   },
+
+  image: {
+    width: 200,
+    height: 300,
+    position: "absolute",
+    top: 225,
+  },
+
   text2: {
     color: "white",
     fontSize: 24,
@@ -80,9 +79,6 @@ const styles = StyleSheet.create({
 
     backgroundColor: "#000000a0",
   },
-  image: {
-    marginBottom: 15,
-  },
-    });
+});
 
 export default OtherTestScreen;

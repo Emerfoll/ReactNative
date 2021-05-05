@@ -21,13 +21,13 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 // const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 export default function App() {
-  console.log(useDeviceOrientation());
+  
   const { landscape } = useDeviceOrientation();
 
   return (
     <SafeAreaView style={styles.container}>
       
-      <WelcomeScreen/>
+      {/* <WelcomeScreen/> */}
 
       <OtherTestScreen/>
 

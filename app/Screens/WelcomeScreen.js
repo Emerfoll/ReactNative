@@ -60,7 +60,7 @@ function WelcomeScreen(props) {
           <Text style={styles.text}>My first React Native app!</Text>
           {/* <StatusBar style="auto" /> */}
 
-          <Image
+          {/* <Image
             style={styles.image}
             source={{
               width: 200,
@@ -68,7 +68,7 @@ function WelcomeScreen(props) {
               uri:
                 "https://i.picsum.photos/id/397/200/300.jpg?hmac=9VBInLrifj_yyc2JuJSAVIfj9yQdt5Ovm2sHmvva-48",
             }}
-          />
+          /> */}
 
           <Text
             style={styles.text2}
