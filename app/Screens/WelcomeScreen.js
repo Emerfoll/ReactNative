@@ -44,7 +44,7 @@ function WelcomeScreen({ navigation }) {
         <Button
           title="Go To Other Page."
           onPress={() => sendToOtherScreen()}
-          accessibilityLabel= "Button to go to other page"
+          accessibilityLabel= "Button to go to 'other page'"
         />
       </View>
       <View
@@ -60,9 +60,6 @@ function WelcomeScreen({ navigation }) {
 
       <View
         style={{
-          // backgroundColor: 'purple',
-          // width: "75%",
-          // flex: .3,
           alignItems: "center",
           marginHorizontal: landscape ? 100 : 55,
         }}
@@ -117,12 +114,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 11,
-    // backgroundColor: "#000000a0"
   },
   text2: {
     color: "white",
     fontSize: 24,
-    // fontWeight: "bold",
     textAlign: "center",
 
     backgroundColor: "#000000a0",

@@ -25,6 +25,7 @@ function OtherTestScreen(props) {
       <Image
         style={styles.image}
         source={{uri:"https://c4.wallpaperflare.com/wallpaper/111/745/193/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg",}}
+        alt="picture of react icon"
       />
 
       <Text style={styles.text}>This is my first react native app!</Text>
